@@ -1,8 +1,4 @@
 //Metodo que recibe un entero en formato decimal y devuelve un double en formato binario.
-// NOTA: Tengo un problema y no encuentro la solucion.
-// Si el numero que recibe es positivo, puedo devolver el double en formato binario
-// Ahora, si el numero que recibe es negativo, por ej -3, devuelve 1001 en vez de 100.
-// Por ese motivo, si se ingresa un
 
 package logica;
 import java.util.Scanner;
@@ -27,7 +23,7 @@ public class DecimalABinario {
         } else {
 
             int numeroAbsoluto = Math.abs(numero); //saco el valor absoluto del numero entero negativo ingresado
-            String binarioPositivo = String.valueOf(decimalPositivoABinario(numeroAbsoluto)); // convierto en una cadena de caracteres el numeroAbsoluto pasado a Binario
+            String binarioPositivo = String.valueOf(decimalPositivoABinario(numeroAbsoluto)); // el numeroAbsoluto pasado a Binario, lo convierto a un dato string
             Double complementoA1 = Double.valueOf(calcularComplementoA1(binarioPositivo));
 
             System.out.println("El numero decimal " + numero + " ,al ser negativo, corresponde al número binario en complemento a 1 = " + complementoA1);
